@@ -11,11 +11,8 @@ Express session for universal controllers authentication.
 ```shell
 npm install @universal-packages/express-controllers-authentication-session
 
-npm install express
-npm install @universal-packages/authentication
 npm install @universal-packages/express-controllers
 npm install @universal-packages/express-controllers-authentication
-npm install @universal-packages/express-session
 ```
 
 ## Dynamics
