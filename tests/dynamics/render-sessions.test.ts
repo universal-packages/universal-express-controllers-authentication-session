@@ -4,12 +4,12 @@ import { Request } from 'express'
 
 describe('express-controllers-authentication-session', (): void => {
   describe('dynamics', (): void => {
-    describe('render-sessions-response', (): void => {
+    describe('render-sessions', (): void => {
       it('returns the active sessions', async (): Promise<void> => {
         const authentication = new Authentication<AuthDynamicNames>({ secret: '123', dynamicsLocation: './tests/__fixtures__' })
         await authentication.loadDynamics()
 
-        const result = await authentication.performDynamic('render-sessions-response', {
+        const result = await authentication.performDynamic('render-sessions', {
           authenticatable: { id: '1' } as any,
           request: {
             session: {
@@ -21,12 +21,10 @@ describe('express-controllers-authentication-session', (): void => {
           } as Request
         })
 
-        expect(result).toEqual({
-          sessions: [
-            { id: 1, lastActive: 785875, ip: '1:1:1:1', userAgent: 'firefox' },
-            { id: 2, lastActive: 8454564, ip: '1:1:1:1', userAgent: 'firefox' }
-          ]
-        })
+        expect(result).toEqual([
+          { id: 1, lastActive: 785875, ip: '1:1:1:1', userAgent: 'firefox' },
+          { id: 2, lastActive: 8454564, ip: '1:1:1:1', userAgent: 'firefox' }
+        ])
       })
     })
   })
