@@ -1,6 +1,6 @@
-import '@universal-packages/express-session'
 import { AuthDynamic, Authentication } from '@universal-packages/authentication'
 import { AuthDynamicNames, AuthenticatableFromRequestPayload } from '@universal-packages/express-controllers-authentication'
+import '@universal-packages/express-session'
 
 @AuthDynamic<AuthDynamicNames>('authenticatable-from-request')
 export default class AuthenticatableFromRequestDynamic {

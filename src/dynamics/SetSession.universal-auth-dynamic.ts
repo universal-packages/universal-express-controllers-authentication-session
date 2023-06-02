@@ -1,6 +1,6 @@
-import '@universal-packages/express-session'
 import { AuthDynamic } from '@universal-packages/authentication'
 import { AuthDynamicNames, SetSessionPayload } from '@universal-packages/express-controllers-authentication'
+import '@universal-packages/express-session'
 
 @AuthDynamic<AuthDynamicNames>('set-session')
 export default class SetSessionDynamic {
