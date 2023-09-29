@@ -19,7 +19,7 @@
     "@universal-packages/express-session": "^1.6.0"
   },
   "peerDependencies": {
-    "@universal-packages/express-controllers": "^1.8.1",
+    "@universal-packages/express-controllers": "^1.9.5",
     "@universal-packages/express-controllers-authentication": "^1.6.2"
   },
   "devDependencies": {
