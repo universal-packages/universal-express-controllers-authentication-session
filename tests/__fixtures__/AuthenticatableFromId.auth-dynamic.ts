@@ -1,8 +1,8 @@
-import { AuthDynamic, AuthDynamicNames, Authenticatable, AuthenticatableFromIdPayload } from '@universal-packages/authentication'
+import { AuthDynamic, AuthDynamicNames, Authenticatable, IdPayload } from '@universal-packages/authentication'
 
 @AuthDynamic<AuthDynamicNames>('authenticatable-from-id')
 export default class AuthenticatableFromIdDynamic {
-  public async perform(payload: AuthenticatableFromIdPayload): Promise<Authenticatable> {
+  public async perform(payload: IdPayload): Promise<Authenticatable> {
     return { id: payload.id } as any
   }
 }
