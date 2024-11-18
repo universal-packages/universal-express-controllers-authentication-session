@@ -17,7 +17,7 @@ npm install @universal-packages/express-controllers-authentication
 
 ## Dynamics
 
-By installing this package the default authentication controllers dynamics related to session (`authenticatable-from-request` and `set-session`) will be overridden to use express-session capabilities.
+By installing this package the default authentication controllers dynamics related to session (`user-from-request` and `set-session`) will be overridden to use express-session capabilities.
 
 ## Typescript
 

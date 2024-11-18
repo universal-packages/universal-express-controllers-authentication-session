@@ -1,14 +1,14 @@
 import { Authentication } from '@universal-packages/authentication'
-import { AuthDynamicNames } from '@universal-packages/express-controllers-authentication'
+import { ExpressControllersAuthDynamicNames } from '@universal-packages/express-controllers-authentication'
 import { Request } from 'express'
 
 describe('render-sessions', (): void => {
   it('returns the active sessions', async (): Promise<void> => {
-    const authentication = new Authentication<AuthDynamicNames>({ secret: '123', dynamicsLocation: './tests/__fixtures__' })
+    const authentication = new Authentication<ExpressControllersAuthDynamicNames>({ secret: '123', dynamicsLocation: './tests/__fixtures__' })
     await authentication.loadDynamics()
 
     const result = await authentication.performDynamic('render-sessions', {
-      authenticatable: { id: '1' } as any,
+      user: { id: '1' } as any,
       request: {
         session: {
           activeSessions: () => ({

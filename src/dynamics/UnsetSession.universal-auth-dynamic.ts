@@ -1,8 +1,8 @@
 import { AuthDynamic } from '@universal-packages/authentication'
-import { AuthDynamicNames, UnsetSessionPayload } from '@universal-packages/express-controllers-authentication'
+import { ExpressControllersAuthDynamicNames, UnsetSessionPayload } from '@universal-packages/express-controllers-authentication'
 import '@universal-packages/express-session'
 
-@AuthDynamic<AuthDynamicNames>('unset-session')
+@AuthDynamic<ExpressControllersAuthDynamicNames>('unset-session')
 export default class UnsetSessionDynamic {
   public async perform(payload: UnsetSessionPayload): Promise<void> {
     const { request, sessionId } = payload

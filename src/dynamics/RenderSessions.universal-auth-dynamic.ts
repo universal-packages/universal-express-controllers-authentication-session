@@ -1,8 +1,8 @@
 import { AuthDynamic } from '@universal-packages/authentication'
-import { AuthDynamicNames, RenderSessionsPayload } from '@universal-packages/express-controllers-authentication'
+import { ExpressControllersAuthDynamicNames, RenderSessionsPayload } from '@universal-packages/express-controllers-authentication'
 import '@universal-packages/express-session'
 
-@AuthDynamic<AuthDynamicNames>('render-sessions')
+@AuthDynamic<ExpressControllersAuthDynamicNames>('render-sessions')
 export default class RenderSessionsDynamic {
   public async perform(payload: RenderSessionsPayload): Promise<Record<string, any>[]> {
     const session = payload.request.session
