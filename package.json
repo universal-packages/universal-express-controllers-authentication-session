@@ -19,8 +19,8 @@
     "@universal-packages/express-session": "^1.7.0"
   },
   "peerDependencies": {
-    "@universal-packages/express-controllers": "^1.12.6",
-    "@universal-packages/express-controllers-authentication": "^1.10.3"
+    "@universal-packages/express-controllers": "^1.12.7",
+    "@universal-packages/express-controllers-authentication": "^1.10.4"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
