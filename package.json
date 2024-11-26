@@ -19,7 +19,7 @@
     "@universal-packages/express-session": "^1.7.0"
   },
   "peerDependencies": {
-    "@universal-packages/express-controllers": "^1.12.7",
+    "@universal-packages/express-controllers": "^1.12.8",
     "@universal-packages/express-controllers-authentication": "^1.10.4"
   },
   "devDependencies": {
@@ -28,7 +28,7 @@
     "@types/jest": "^29.5.12",
     "@types/node": "^18.11.9",
     "@universal-packages/dynamic-api-jest": "^1.1.5",
-    "@universal-packages/maintenance": "^1.6.9",
+    "@universal-packages/maintenance": "^1.6.10",
     "jest": "^29.7.0",
     "prettier": "^3.0.3",
     "ts-jest": "^29.1.2",
