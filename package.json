@@ -20,7 +20,7 @@
   },
   "peerDependencies": {
     "@universal-packages/express-controllers": "^1.14.3",
-    "@universal-packages/express-controllers-authentication": "^1.11.15"
+    "@universal-packages/express-controllers-authentication": "^1.11.16"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
